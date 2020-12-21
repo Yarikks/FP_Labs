@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 2</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Лабораторна робота №2</h1>
+                  <p class="lead">Рекурентні співвідношення для тригонометричних, експоненціальних функцій та ланцюгові дроби.</p>
+                </div>
+              </div>
+
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/index.html">Усі лабораторні</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Лабораторна №2</li>
+                </ol>
+              </nav>
+        </header>
+        <div class="content-block">
+            <div class="aim">
+                <h2>Мета</h2>
+                <p>1.	Написати процедури, що обчислюють задану функцію за допомогою рекурентних послідовностей, розвинувши її у ряд Маклорена (абоТейлора).</p>
+                <p>2.	Параметр функції має змінюватися від заданого в процесі виклику мінімального значення до максимального значення із певним кроком.</p>
+                <p>3.	Розвинення функції в ряд здійснювати із заданою точністю. Точність розрахунку задавати в діапазоні від 10-2 до 10-6.</p>
+                <p>4.	Для розвинення функції у ряд Маклорена (абоТейлора) створити власну функцію, яка розраховує суму ряду за рекурентним співвідношенням.</p>
+                <p>5.	Значення функції tg(x) обчислювати через функції sin(x) та cos(x).</p>
+                <p>6.	Визначити похибку обчислення наближених значень функції як різницю абсолютних значень наближеного обчислення та стандартного значення функції.</p>
+                <p>7.	Стандартне значення функції обчислювати за допомогою бібліотечних математичних функцій.</p>
+
+            </div>
+            
+            <div class="task">
+                <h2>Завдання</h2>
+                <img src="../img/task2.png">
+            </div>
+
+            <div class="progress-work">
+                <h2>Хід роботи</h2>
+                <div class="progress-task">
+                    <h4>Завдання 1</h4>
+                    <h4><b>Приклад коду програми</b></h4>
+                    <br>
+    
+                    <img src="../img/work2-1.png">
+                    <br><br>
+    
+                    <p>Функція у повертає розв’язок до рівняння відповідно до завдання.</p>
+                    <p>Функція cycle запускає рекурсію та встановлює межі(в моєму випадку це -2 2), кожного разу метод виводить на екран результат та знову запускає себе допоки значення лежить у вказаних межах.</p>
+                    <br><br>
+    
+                    <h4><b>Приклад роботи програми</b></h4>
+                    <img src="../img/work2-2.png">
+                </div>
+
+                <div class="progress-task">
+                    <h4>Завдання 2</h4>
+                    <h4><b>Приклад коду програми</b></h4>
+                    <br>
+    
+                    <img src="../img/work2-3.png">
+                    <br><br>
+    
+                    <p>Спочатку ми визначаємо змінну х. Далі визначаємо нову функцію chain, у якій, відповідно до завдання, створюємо перевірку та рекурсивним способом викликаємо цей метод стільки разів, скільком дорівнює значення передане в аргументи функції. Значення n ми читаємо з вводу користувача.</p>
+                    <br><br>
+    
+                    <h4><b>Приклад роботи програми</b></h4>
+                    <img src="../img/work2-4.png">
+                </div>
+            </div>
+
+            <div class="conclusion">
+                <h2>Висновок</h2>
+                <p>На цій лабораторній роботі я ознайомився з рекурентними співвідношеннями для тригонометричних та експоненціальних функцій в Lisp. Також я створив та запустив програму згідно до завдання, в якій використав здобуті навички.</p>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

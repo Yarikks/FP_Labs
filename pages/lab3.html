@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 3</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Лабораторна робота №3</h1>
+                  <p class="lead">Форми lambda та let, вираз присвоєння set! для озв’язання нелінійних рівнянь та чисельного інтегрування функцій.</p>
+                </div>
+              </div>
+
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/index.html">Усі лабораторні</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Лабораторна №3</li>
+                </ol>
+              </nav>
+        </header>
+        <div class="content-block">
+            <div class="aim">
+                <h2>Мета</h2>
+                <p>1.	Написати процедури, що знаходять корені нелінійних рівнянь, використовуючи форми lambda, let, set!</p>
+                <p>2.	Написати процедури, що обчислюють інтеграл функції за формулами прямокутників, трапецій, Симпсона (парабол)</p>
+            </div>
+            
+            <div class="task">
+                <h2>Завдання</h2>
+                <img src="../img/task3.png">
+            </div>
+
+            <div class="progress-work">
+                <h2>Хід роботи</h2>
+                <div class="progress-task">
+                    <h4>Завдання 1</h4>
+                    <h4><b>Приклад коду програми</b></h4>
+                    <br>
+    
+                    <img src="../img/work3-1.png">
+                    <img src="../img/work3-2.png">
+                    <br><br>
+    
+                    <p>Метод mean повертає середнє значення а та b.</p>
+                    <p>Метод is-close перевіряє чи вираз b-a менший від 0.0001</p>
+                    <p>Метод different-sign перевіряє значення a та b на те, чи вони більші або менші від 0.</p>
+                    <p>Метод bisect повертає результат методу бісекції використовуючи вище написані функції та приймаючи в аргументи функцію та значення a і b.</p>
+                    <p>Метод f це функція із завдання.</p>
+                    <br><br>
+    
+                    <h4><b>Приклад роботи програми</b></h4>
+                    <img src="../img/work3-3.png">
+                </div>
+
+                <div class="progress-task">
+                    <h4>Завдання 2</h4>
+                    <h4><b>Приклад коду програми</b></h4>
+                    <br>
+    
+                    <img src="../img/work3-4.png">
+                    <img src="../img/work3-5.png">
+                    <br><br>
+    
+                    <p>Функція f це функція із завдання.</p>
+                    <p>Функція integral-center виконує обчислення інтеграла за формулою середніх прямокутників.</p>
+                    <p>Функція integral-left виконує обчислення інтеграла за формулою лівих прямокутників.</p>
+                    <p>Функція integral-simpson виконує обчислення інтеграла за формулою Сімпсона.</p>
+                    <p>Результат виводиться на екран.</p>
+                    <br><br>
+    
+                    <h4><b>Приклад роботи програми</b></h4>
+                    <img src="../img/work3-6.png">
+                </div>
+            </div>
+
+            <div class="conclusion">
+                <h2>Висновок</h2>
+                <p>На цій лабораторній роботі я ознайомився з формами lambda та let. Також я створив та запустив програму згідно до завдання, в якій використав здобуті навички.</p>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lab 1</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="../styles/index.css">
+    </head>
+    <body>
+        <header>
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                  <h1 class="display-4">Лабораторна робота №1</h1>
+                  <p class="lead">Використання рекурсії для організації повторювальних процесів.</p>
+                </div>
+              </div>
+
+              <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="/index.html">Усі лабораторні</a></li>
+                  <li class="breadcrumb-item active" aria-current="page">Лабораторна №1</li>
+                </ol>
+              </nav>
+        </header>
+        <div class="content-block">
+            <div class="aim">
+                <h2>Мета</h2>
+                <p>Написати процедури, що обчислюють задану функцію за допомогою рекурсивного процесу. Продемонструвати застосування звичайної та хвостової рекурсії.</p>
+            </div>
+            
+            <div class="task">
+                <h2>Завдання</h2>
+                <img src="../img/task1.png">
+            </div>
+
+            <div class="progress-work">
+                <h2>Хід роботи</h2>
+                <div class="progress-task">
+                    <h4>Завдання 1.1</h4>
+                    <h4><b>Приклад коду програми</b></h4>
+                    <br>
+    
+                    <img src="../img/work1-1.png">
+                    <br><br>
+    
+                    <h4><b>Пояснення щодо коду</b></h4>
+                    <p>В першому пункті створюємо змінну input за допомогою функції defvar.</p>
+                    <p>В другому пункті створюємо функцію readUserInput без параметрів.</p>
+                    <p>В третьому – даємо змінній input значення введене з клавіатури за допомогою функції setq та read.</p>
+                    <p>В четвертому – створюємо функцію sum з аргументом n(який означає число) для розрахунку суми цифр певного числа.</p>
+                    <p>В п’ятому – перевіряємо чи n менше ніж 10, якщо так, то повертаємо число.</p>
+                    <p>В шостому – функція rem виконує ділення з остачею, результат якої додається до результату виклику методу sum аргументом якого є функція truncate, яка обрізає останню цифру числа.</p>
+                    <p>В сьомому – виводимо на екран текст за допомогою команди write-line.</p>
+                    <p>У восьмому – викликаємо функцію readUserInput, назва якої говорить сама за себе.</p>
+                    <p>У дев’ятому – виводимо текст на екран(як і в пункті 7).</p>
+                    <p>Та, в десятому – виводимо на екран результат функції sum з параметром input.</p>
+                    <br><br>
+    
+                    <h4><b>Приклад роботи програми</b></h4>
+                    <img src="../img/work1-2.png">
+                </div>
+                
+                <div class="progress-task">
+                    <h4>Завдання 1.2</h4>
+                    <h4><b>Приклад коду програми</b></h4>
+                    <br>
+    
+                    <img src="../img/work1-3.png">
+                    <br><br>
+    
+                    <h4><b>Пояснення щодо коду</b></h4>
+                    <p>1 – 3: Створюємо змінні sum, pr(ініціалізовуємо відразу), periods.</p>
+                    <p>4: Створюємо функцію contributionAmount з двома параметрами.</p>
+                    <p>5: Перевіряємо чи periods більше нуля.</p>
+                    <p>6: Якщо так, то викликаємо цю ж функцію ще раз передаючи змінені параметри.</p>
+                    <p>7: Якщо ні, то повертаємо суму</p>
+                    <p>8: Виводимо текст на екран.</p>
+                    <p>9: Читаємо значення sum з клавіатури.</p>
+                    <p>10: Виводимо текст на екран.</p>
+                    <p>11: Виводимо текст на екран.</p>
+                    <p>12: Читаємо значення periods з клавіатури.</p>
+                    <p>13: Виводимо відформатований текст на екран з результатом функції contributionAmount.</p>
+                    <br><br>
+    
+                    <h4><b>Приклад роботи програми</b></h4>
+                    <img src="../img/work1-4.png">
+                </div>
+            </div>
+
+            <div class="conclusion">
+                <h2>Висновок</h2>
+                <p>На цій лабораторній роботі я ознайомився з рекурсією в Lisp. Cтворив і запустив програму, в якій використав здобуті навички.</p>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
